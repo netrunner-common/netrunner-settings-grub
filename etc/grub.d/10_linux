@@ -22,7 +22,7 @@ exec_prefix="/usr"
 datarootdir="/usr/share"
 ubuntu_recovery="1"
 quiet_boot="1"
-quick_boot="1"
+quick_boot="0"
 gfxpayload_dynamic="1"
 vt_handoff="1"
 
