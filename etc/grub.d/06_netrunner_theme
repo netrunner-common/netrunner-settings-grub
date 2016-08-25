@@ -30,6 +30,7 @@ BACKGROUND_CACHE=".background_cache"
 set_default_theme(){
 	case $GRUB_DISTRIBUTOR in
                 Netrunner*)
+                        echo "insmod png"
                         echo "set theme=(\$root)/boot/grub/themes/netrunner/theme.txt"
                         ;;
 		Tanglu|Ubuntu|Kubuntu)
