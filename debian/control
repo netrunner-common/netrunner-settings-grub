@@ -9,6 +9,6 @@ Package: netrunner-settings-grub
 Architecture: all
 Replaces: netrunner-system (<< 1.1.4)
 Breaks: netrunner-system (<< 1.1.4)
-Depends: artwork-grub-netrunner-black
+Depends: artwork-grub-theme-netrunner-black
 Description: Netrunner specific grub settings
   This package provides the default grub settings for Netrunner.
