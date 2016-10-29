@@ -4,7 +4,7 @@ set -e
 
 # Remove grub customizations
 function grub_customization {
-  dpkg-divert --package netrunner-settings-grub --add --rename --divert /usr/share/netrunner/grub_10_linux.orig /etc/grub.d/10_linux
+  dpkg-divert --package netrunner-settings-grub --remove --rename --divert /usr/share/netrunner/grub_10_linux.orig /etc/grub.d/10_linux
 }
 
 # summary of how this script can be called:
