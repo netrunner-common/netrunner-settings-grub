@@ -31,7 +31,7 @@ set_default_theme(){
 	case $GRUB_DISTRIBUTOR in
                 Netrunner*)
                         echo "insmod png"
-                        echo "set theme=(\$root)/boot/grub/themes/netrunner-black/theme.txt"
+                        echo "set theme=(\$root) `make_system_path_relative_to_its_root /boot/grub/themes/netrunner-black/theme.txt`"
                         ;;
 		Tanglu|Ubuntu|Kubuntu)
 			# Set a monochromatic theme for Tanglu/Ubuntu.
