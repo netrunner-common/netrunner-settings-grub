@@ -28,6 +28,10 @@ vt_handoff="1"
 
 . "${datarootdir}/grub/grub-mkconfig_lib"
 
+# Source os-release for the name
+. "/etc/os-release"
+GRUB_DISTRIBUTOR=${NAME}
+
 export TEXTDOMAIN=grub
 export TEXTDOMAINDIR="${datarootdir}/locale"
 
@@ -37,7 +41,7 @@ if [ "x${GRUB_DISTRIBUTOR}" = "x" ] ; then
   OS=GNU/Linux
 else
   case ${GRUB_DISTRIBUTOR} in
-    Ubuntu|Kubuntu|Netrunner)
+    Ubuntu|Kubuntu|Netrunner*)
       OS="${GRUB_DISTRIBUTOR}"
       ;;
     *)
