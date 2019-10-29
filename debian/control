@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 
 Package: netrunner-settings-grub
-Architecture: all
+Architecture: any
 Replaces: netrunner-system (<< 1.1.4), grub-common
 Breaks: netrunner-system (<< 1.1.4)
 Depends: artwork-grub-theme-netrunner-black
